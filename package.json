@@ -1,0 +1,38 @@
+{
+  "name": "vancorvid.com",
+  "type": "module",
+  "version": "1.0.0",
+  "private": "true",
+  "license": "MPL-2.0",
+  "browserslist": "> 5%, not dead",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.cjs --mode development --devtool inline-source-map --hot $EXTRA_WEBPACK_DEV_SERVER_ARGS",
+    "build": "webpack --config webpack.config.cjs --mode=production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.9.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-react": "^7.20.6",
+    "flow-bin": "^0.133.0",
+    "flow-webpack-plugin": "^1.2.0",
+    "html-webpack-plugin": "^4.4.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-html-plugin": "^0.1.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
